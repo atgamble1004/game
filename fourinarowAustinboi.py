@@ -1,8 +1,8 @@
-# MRS SOUKUP: I changed the pictures. You'll see.
 # Four-In-A-Row (a Connect Four clone)
 # By Al Sweigart al@inventwithpython.com
 # http://inventwithpython.com/pygame
 # Released under a "Simplified BSD" license
+# Edited by Austin Gamble
 
 import random, copy, sys, pygame
 from pygame.locals import *
@@ -44,6 +44,9 @@ def main():
     FPSCLOCK = pygame.time.Clock()
     DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
     pygame.display.set_caption('Four in a Row')
+
+    GAMEMUSIC = {}
+    GAMEMUSIC['Bohemian Rhapsody'] = pygame.mixer.Sound('Bohemian Rhapsody.mp3')
 
     REDPILERECT = pygame.Rect(int(SPACESIZE / 2), WINDOWHEIGHT - int(3 * SPACESIZE / 2), SPACESIZE, SPACESIZE)
     BLACKPILERECT = pygame.Rect(WINDOWWIDTH - int(3 * SPACESIZE / 2), WINDOWHEIGHT - int(3 * SPACESIZE / 2), SPACESIZE, SPACESIZE)
