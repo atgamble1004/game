@@ -47,6 +47,7 @@ def main():
 
     GAMEMUSIC = {}
     GAMEMUSIC['Bohemian Rhapsody'] = pygame.mixer.Sound('Bohemian Rhapsody.mp3')
+    GAMEMUSIC['Bohemian Rhapsody'].play()
 
     REDPILERECT = pygame.Rect(int(SPACESIZE / 2), WINDOWHEIGHT - int(3 * SPACESIZE / 2), SPACESIZE, SPACESIZE)
     BLACKPILERECT = pygame.Rect(WINDOWWIDTH - int(3 * SPACESIZE / 2), WINDOWHEIGHT - int(3 * SPACESIZE / 2), SPACESIZE, SPACESIZE)
